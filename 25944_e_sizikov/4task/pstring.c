@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define BUFSIZE 4096  
+#define BUFSIZE 1000
 
 typedef struct Node {
     char *str;
@@ -55,7 +55,7 @@ int main(void){
             first = 0;
         } 
         else {
-            fputs("|", stdout);
+            fputs("\n", stdout);
             fwrite(cur->str, 1, len, stdout);
         }
     }
